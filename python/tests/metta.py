@@ -4,6 +4,7 @@ import sys
 from common import MeTTa
 
 if __name__ == "__main__":
+    init_logger()
     os.system('clear')
     print("\n========= MeTTa version 0.0 =========\n\n")
     metta = MeTTa()
