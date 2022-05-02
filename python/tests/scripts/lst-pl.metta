@@ -13,6 +13,8 @@
 
 (= (if True $then) $then)
 
-
+;Ok
 !(println! (if (append (lst3) (lst2) $L) $L))
+
+; doesn't work
 !(println! (if (append (lst1) (lst2) $L) $L))
