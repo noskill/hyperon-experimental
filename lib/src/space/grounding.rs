@@ -114,6 +114,10 @@ impl GroundingSpace {
                 if let Ok(bindings) = bindings {
                     log::debug!("single_query: push result: {}, bindings: {}", next, bindings);
                     result.push(bindings);
+                } else {
+                    log::debug!("reject result: {}, bindings: {} bindings: {}", next,
+                        &res.candidate_bindings,
+                        &res.pattern_bindings);
                 }
             }
         }
